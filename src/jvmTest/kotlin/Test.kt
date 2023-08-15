@@ -16,7 +16,7 @@ class Tests {
         val account = File("account.txt").readLines()
 
         return KisOpenApi.withToken(
-            token[0], key[0], key[1], false, account = account[0]
+            token[0], key[0], key[1], true, account = account[0]
         )
     }
 
